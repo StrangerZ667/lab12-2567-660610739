@@ -1,12 +1,12 @@
-export const Footer = (props: {
-  year: string;
-  fullName: string;
-  studentId: string;
-}) => {
+import { LangContext } from "@contexts/LangContext";
+import { useContext } from "react";
+
+export const Footer = () => {
+  const { lang } = useContext(LangContext);
   return (
     <div className="mt-3">
       <p className="text-secondary text-center">
-        Copyright © {props.year} {props.fullName} {props.studentId}
+        {lang.footer}
       </p>
     </div>
   );
