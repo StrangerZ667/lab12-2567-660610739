@@ -25,6 +25,7 @@ export default function Home() {
     EN: {
       name: "en",
       header: "A simple useContext Example",
+      footer: "Copyright © 2024 Kanchai Khumdee 660610739",
       detail: {
         lightActivated: "light theme activated",
         darkActivated: "dark theme activated",
@@ -39,6 +40,7 @@ export default function Home() {
     TH: {
       name: "th",
       header: "ตัวอย่างเว็บไซท์ useContext อย่างง่าย",
+      footer: "Copyright © 2024 กรรชัย คุ้มดี 660610739",
       detail: {
         lightActivated: "กำลังใช้ธีมไลท์",
         darkActivated: "กำลังใช้ธีมดาร์ค",
@@ -76,9 +78,9 @@ export default function Home() {
           <Header />
           <Detail />
           <Controller />
+          <Footer />
         </LangContext.Provider>
       </ThemeContext.Provider>
-      <Footer year="2024" fullName="Kanchai Khumdee" studentId="660610739" />
     </div>
   );
 }
